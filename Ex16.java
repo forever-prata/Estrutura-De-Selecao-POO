@@ -1,0 +1,30 @@
+package lista2;
+
+import java.util.Scanner;
+public class Ex16 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite a primeira nota: ");
+		int n1 = scan.nextInt();
+		
+		System.out.println("Digite a segunda nota: ");
+		int n2 = scan.nextInt();
+		
+		float media = (n1+n2)/2;
+		
+		if (media < 3 ) {
+			System.out.println("Reprovado");
+		}else if (media <= 6.9 ) {
+			System.out.println("Exame");
+		}else {
+			System.out.println("Aprovado");
+		}
+		
+		scan.close();
+		
+	}
+
+}
